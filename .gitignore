@@ -1,3 +1,5 @@
 /bin
 /pkg
 /misc/ca-bundle.crt
+*.swp
+ecs-task-kite
