@@ -15,7 +15,7 @@
 # This script is meant to make this package available in the canonical location
 # when running on Travis CI. This is useful for anyone who wishes to run Travis
 # CI against their fork of the repo.
-if [[ ! -d "$HOME/gopath/src/github.com/awslabs/ecs-task-kite" ]]; then
+if [[ ! -d "$HOME/gopath/src/github.com/cevoaustralia/ecs-task-kite" ]]; then
 	mkdir -p "$HOME/gopath/src/github.com/awslabs"
-	ln -s "$(pwd)" "$HOME/gopath/src/github.com/awslabs/ecs-task-kite"
+	ln -s "$(pwd)" "$HOME/gopath/src/github.com/cevoaustralia/ecs-task-kite"
 fi

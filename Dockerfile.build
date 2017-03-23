@@ -4,5 +4,4 @@ RUN mkdir /build
 COPY . /build/
 WORKDIR /build
 
-RUN go get -v github.com/cevoaustralia/ecs-task-kite/
-RUN make static-go-binary
+RUN go get -v && go build .

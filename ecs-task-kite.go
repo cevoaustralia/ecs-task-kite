@@ -20,9 +20,9 @@ import (
 	"time"
 
 	log "github.com/Sirupsen/logrus"
-	"github.com/awslabs/ecs-task-kite/lib/ecsclient"
-	"github.com/awslabs/ecs-task-kite/lib/proxy"
-	"github.com/awslabs/ecs-task-kite/lib/taskhelpers"
+	"github.com/cevoaustralia/ecs-task-kite/lib/ecsclient"
+	"github.com/cevoaustralia/ecs-task-kite/lib/proxy"
+	"github.com/cevoaustralia/ecs-task-kite/lib/taskhelpers"
 )
 
 func main() {
