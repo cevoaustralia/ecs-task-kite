@@ -1,7 +1,8 @@
 FROM golang:1.7
 
-RUN mkdir /build
-COPY . /build/
-WORKDIR /build
+RUN mkdir -p /build/src/github.com/cevoaustralia/ecs-task-kite/
+COPY . /build/src/github.com/cevoaustralia/ecs-task-kite/
+ENV GOPATH=/build
+WORKDIR /build/src/github.com/cevoaustralia/ecs-task-kite
 
 RUN go get -v && go build .

@@ -42,3 +42,9 @@ lint:
 
 build-deps:
 	go get github.com/golang/lint/golint
+
+build:
+	docker build -t task-kite-builder -f Dockerfile.build .
+	docker create --name task-kite-builder-container task-kite-builder
+	docker cp task-kite-builder-container:/build/src/github.com/cevoaustralia/ecs-task-kite/ecs-task-kite .
+	docker rm task-kite-builder-container
