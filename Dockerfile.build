@@ -1,4 +1,4 @@
-FROM golang:1.7
+FROM golang:1.17beta1
 
 RUN mkdir -p /build/src/github.com/cevoaustralia/ecs-task-kite/
 COPY . /build/src/github.com/cevoaustralia/ecs-task-kite/
